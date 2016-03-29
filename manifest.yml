@@ -1,0 +1,9 @@
+---
+applications:
+  - name: springdataredis
+    buildpack: java_buildpack
+    path: target/spring-data-redis-1.0.0.BUILD-SNAPSHOT.jar
+services:
+    - configserver
+    - discovery
+    - redis
